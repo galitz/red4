@@ -1,0 +1,4 @@
+flag.txt
+.htaccess
+.htpasswd
+wp-config.php
