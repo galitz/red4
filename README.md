@@ -1,9 +1,13 @@
-# red4
+# Random red4 notes
 Scripts and tools for red teams, bug bountys and so on.
 
-## red4.sh
-This is the thing.  
+## Enumeration
 
-### Files.txt
-These are the interesting files to look for. One per line.
+### FTP Enumeration
+* Try using absolue paths which are not visible from the current top level PWD (especially Microsoft FTP)
+
+
+## Exploits
+* exploit-db, searchsploit are only as useful as the folks submitting material to them.  Lots of exploit writers publish on github and that's it.
+
 
