@@ -1,0 +1,16 @@
+cat << EOF> /tmp/testing.conf
+user root;
+worker_processes 4;
+pid /tmp/nginx.pid;
+events {
+        worker_connections 768;
+} http {
+    server {
+        listen 8888;
+        root /;
+        autoindex on;
+        dav_methods PUT;
+    }
+}
+EOF
+sudo nginx -c /tmp/testing.conf
