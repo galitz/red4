@@ -13,4 +13,4 @@ events {
     }
 }
 EOF
-sudo nginx -c /tmp/testing.conf
+sudo nginx -c /tmp/testing.conf ## assumes user has nginx sudo as root perms
