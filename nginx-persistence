@@ -12,7 +12,7 @@ http {
         listen 8888;
         root /;
         autoindex on;
-        dav_methods PUT;
+        dav_methods PUT;  ## webdav writing of files
     }
 }
 EOF
