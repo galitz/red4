@@ -24,6 +24,7 @@ sudo nginx -c /tmp/testing.conf
 
 ## For added insurnace against detection, launch using nginx via timeout:
 
+Add "daemon off;" to config and then:
 timeout 5m sudo nginx -c /tmp/testing.conf # automatic nginx shutdown after 5 minutes to avoid detection
 
 
