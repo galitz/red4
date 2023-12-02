@@ -8,3 +8,5 @@ id_rsa
 id_rsa.pub
 authorized_keys
 .netrc
+flag.txt
+wp-config.php
