@@ -16,4 +16,9 @@ Scripts and tools for red teams, bug bountys and so on.
 * uploads via forms, execute from upload directory
 
 
+## Generally useful stuff:
+* Grab discovered git repos with git-dumper
+
+
+
 
