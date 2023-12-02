@@ -1,0 +1,10 @@
+.htpasswd
+.htaccess
+robot.txt
+security.txt
+.git
+.svn
+id_rsa
+id_rsa.pub
+authorized_keys
+.netrc
